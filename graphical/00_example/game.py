@@ -7,7 +7,7 @@ import pygame
 app_size = (640, 480)
 
 STEP = 20
-RADIUS = 30
+RADIUS = 50
 
 
 @dataclass
@@ -28,4 +28,4 @@ def on_key_down(state: State, key):
 
 def draw(screen: pygame.Surface, state: State):
     screen.fill((20, 20, 30))
-    pygame.draw.circle(screen, (240, 200, 60), (state.x, 240), RADIUS)
+    pygame.draw.circle(screen, (225, 0, 127), (state.x, 250), RADIUS)
